@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage('clone')
+    stage('clone'){
     steps{
       git branch:'main',url:'https://github.com/vaishnavibadavath106-sys/calculator.git';
     }
@@ -26,6 +26,7 @@ pipeline{
       echo 'deployment completed'
     }
    }
+}
 }
 
 
